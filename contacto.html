@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Blog del Ñam</title>
+    <title>DCV</title>
     <link rel="stylesheet" href="css/normalice.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,38 +12,98 @@
 </head>
 <body>
     <header class="header">
+        <div class="color">
         <div class="contenedor">
             <div class="barra">
                 <a href="index.html" class="logo">
-                    <h1 class="logo__nombre no-margin centrar-texto">Amour <span class="logo__bold">Plastique</span></h1>
+                    <h1 class="logo__nombre no-margin centrar-texto">DCV <span class="logo__bold">a distancia</span></h1>
                 </a>
                 <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">
-                        Contacto
-                    </a>
+                    <a href="contacto.html" class="navegacion__enlace">Directorio</a>
+                    <a href=# class="navegacion__enlace">Egresados</a>
+                    <a href="encuesta.html" class="navegacion__enlace">Encuesta SUAyED</a>
+                    <a href="Incripcion20212.html" class="navegacion__enlace">Inscripcion</a>
+                    <a href="PrimerIngreso2021.html" class="navegacion__enlace">Primer Ingreso</a>
                 </nav>
              </div>
         </div>
             <div class="header__texto">
-                <h2 class="no-margin">Blog de Café con consejos y cursos</h2>
-                <p class="no-margin"> Aprende de los expertos, con las mejores recetas y consejos
+                <h2 class="no-margin espaciado">Diseño y comunicación visual a distancia</h2>
+                <p class="no-margin"> Sistema de gestión del alumnado
                 </p>
             </div>
+        </div>
     </header>
         <main class="contenedor"> 
             <h3 class="centrar-texto"></h3>
                 <div class="contacto-bg">
-
+                    
                 </div>
                 <form class="formulario">
+                    <h1 class="centrar-texto">Directorio</h1>
                     <div class="campo">
-                        <label class="campo__label" for="nombre">Nombre</label>
+                        <label class="campo__label" for="buscar">Buscar</label>
+                            <input class="campo__field"
+                             type="number" 
+                            placeholder="Ingrese numero de cuenta" 
+                            id="buscar">
+                    </div>
+                    <div class="campo linea">
+                        <input type="submit" 
+                            value="Buscar" 
+                            class="boton boton--secun">
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label" for="HorayFecha">Marca Temporal</label>
                             <input class="campo__field"
                              type="text" 
+                            placeholder="Hora y Fecha" 
+                            id="HorayFecha">
+                        
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label"
+                        for="Generacion">Generacion</label>
+                            <input class="campo__field"
+                            type="text" 
+                            placeholder="Ingresa la generacion" 
+                            id="Generacion">
+                        
+                    </div>
+                  
+                    <div class="campo">
+                        <label class="campo__label"
+                        for="no-cuenta">No. Cuenta</label>
+                        <input class="campo__field"
+                            type="number" 
+                            placeholder="Tu email" 
+                            id="no-cuenta">
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label"
+                        for="nombre">Nombre</label>
+                            <input class="campo__field"
+                            type="text" 
                             placeholder="Tu nombre" 
                             id="nombre">
+                        
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label"
+                        for="P_Apellido">Primer Apellido</label>
+                            <input class="campo__field"
+                            type="text" 
+                            placeholder="Primer Apellido" 
+                            id="P_Apellido">
+                        
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label"
+                        for="S_Apellido">Segundo Apellido</label>
+                            <input class="campo__field"
+                            type="text" 
+                            placeholder="Segundo Apellido" 
+                            id="S_Apellido">
                         
                     </div>
                     <div class="campo">
@@ -57,15 +117,51 @@
                     </div>
                     <div class="campo">
                         <label class="campo__label"
-                        for="mensaje">Mensaje</label>
-                            <textarea class="campo__field campo__field--textarea"
-                            id="mensaje" ></textarea>
+                        for="Celular">Celular</label>
+                            <input class="campo__field"
+                            type="text" 
+                            placeholder="Ingresa tu celular" 
+                            id="Celular">
                         
                     </div>
                     <div class="campo">
+                        <label class="campo__label"
+                        for="Tel">Telefono</label>
+                            <input class="campo__field"
+                            type="text" 
+                            placeholder="Ingresa tu teléfono" 
+                            id="Tel">
+                        
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label"
+                        for="Residencia">Residencia actual</label>
+                            <input class="campo__field"
+                            type="text" 
+                            placeholder="ejemplo: CDMX" 
+                            id="Residencia">
+                        
+                    </div>
+               
+                    <div class="campo ">
+                        <label class="campo__label"
+                        for="RFC">RFC</label>
+                            <input class="campo__field"
+                            type="text" 
+                            placeholder="sin homoclave" 
+                            id="RFC">
+                        
+                    </div>
+                    <div class="campo flex">
                         <input type="submit" 
-                        value="Enviar" 
-                        class="boton boton--primario">
+                        value="Subir" 
+                        class="boton boton--primario mar">
+                        <input type="submit" 
+                        value="Eliminar" 
+                        class="boton boton--primario mar">
+                        <input type="submit" 
+                        value="Guardar" 
+                        class="boton boton--primario mar">
                     </div>
                 </form>
             
@@ -76,15 +172,8 @@
         <div class="contenedor"> 
             <div class="barra">
                 <a href="index.html" class="logo">
-                    <h1 class="logo__nombre no-margin centrar-texto">Amour <span class="logo__bold">Plastique</span></h1>
+                    <h1 class="logo__nombre no-margin centrar-texto">DCV <span class="logo__bold">a distancia</span></h1>
                 </a>
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">
-                        Contacto
-                    </a>
-                </nav>
              </div>
              <script src="js/modernizr.js"></script>
 </footer>

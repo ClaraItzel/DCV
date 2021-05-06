@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Blog del Ñam</title>
+    <title>DCV</title>
     <link rel="stylesheet" href="css/normalice.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,43 +12,126 @@
 </head>
 <body>
     <header class="header">
+        <div class="color">
         <div class="contenedor">
             <div class="barra">
                 <a href="index.html" class="logo">
-                    <h1 class="logo__nombre no-margin centrar-texto">Amour <span class="logo__bold">Plastique</span></h1>
+                    <h1 class="logo__nombre no-margin centrar-texto">DCV <span class="logo__bold">a distancia</span></h1>
                 </a>
                 <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">
-                        Contacto
-                    </a>
+                    <a href="contacto.html" class="navegacion__enlace">Directorio</a>
+                    <a href=# class="navegacion__enlace">Egresados</a>
+                    <a href="encuesta.html" class="navegacion__enlace">Encuesta SUAyED</a>
+                    <a href="Incripcion20212.html" class="navegacion__enlace">Inscripcion</a>
+                    <a href="PrimerIngreso2021.html" class="navegacion__enlace">Primer Ingreso</a>
                 </nav>
              </div>
         </div>
             <div class="header__texto">
-                <h2 class="no-margin">Blog de Café con consejos y cursos</h2>
-                <p class="no-margin"> Aprende de los expertos, con las mejores recetas y consejos
+                <h2 class="no-margin espaciado">Diseño y comunicación visual a distancia</h2>
+                <p class="no-margin"> Sistema de gestión del alumnado
                 </p>
             </div>
+        </div>
     </header>
         <main class="contenedor"> 
-            <h3 class="txt centrar-texto"> Sobre Nosotros</h3>
-
-            <div class="nosotros">
-                <div class="nosotros__nosotros">
-                    <img src="img/nosotros.jpg" alt="Nosotros">
+            <h3 class="centrar-texto"></h3>
+                <div class="contacto-bg">
+                    
                 </div>
-
-            <div class="nosotros__texto">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non tortor mi. Nulla at lectus leo. In hac habitasse platea dictumst. Phasellus eu consequat metus.
-                </p>
-                <p>
-                    Donec ac eros sit amet sapien varius pellentesque. Curabitur tincidunt facilisis massa non scelerisque. Integer risus tellus, semper eget interdum et, venenatis id ante.
-                </p>
-            </div>
-            </div>
+                <form class="formulario">
+                    <h1 class="centrar-texto">Egresados por generacion</h1>
+                    <div class="campo">
+                        <label class="campo__label" for="HorayFecha">Buscar</label>
+                            <input class="campo__field"
+                             type="text" 
+                            placeholder="Ingrese la generacion buscada" 
+                            id="HorayFecha">
+                    </div>
+                    <div class="campo linea">
+                        <input type="submit" 
+                            value="Buscar" 
+                            class="boton boton--secun">
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label" for="ID">ID</label>
+                            <input class="campo__field"
+                             type="number" 
+                            placeholder="Ejemplo: 5" 
+                            id="ID">
+                        
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label"
+                        for="generacion">Generacion</label>
+                            <input class="campo__field"
+                            type="text" 
+                            placeholder="Ejemplo: 2014-II" 
+                            id="generacion">
+                        
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label"
+                        for="n_inscritos">No. alumnos incritos</label>
+                            <input class="campo__field"
+                            type="number" 
+                            placeholder="Personas inscritas dicho semestre" 
+                            id="n_inscritos">
+                        
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label"
+                        for="n_reinscritos">No alumnos reinscritos</label>
+                            <input class="campo__field"
+                            type="number" 
+                            placeholder="Personas reinscritas dicho semestre" 
+                            id="n_reinscritos">
+                        
+                    </div>
+                    
+                  
+                    <div class="campo">
+                        <label class="campo__label"
+                        for="no_alumnostotal">No. inscritos y reinscritos</label>
+                        <input class="campo__field"
+                            type="number" 
+                            placeholder="Total de alumnos" 
+                            id="no_alumnostotal">
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label"
+                        for="egresos">Egresados</label>
+                            <input class="campo__field"
+                            type="text" 
+                            placeholder="Numero de egresos" 
+                            id="egresos">
+                        
+                    </div>
+                    <div class="campo">
+                        <label class="campo__label"
+                        for="e_terminal">% eficiencia terminal</label>
+                            <input class="campo__field"
+                            type="text" 
+                            placeholder="Ej. 7.4" 
+                            id="e_terminal">
+                        
+                    </div>
+                 
+               
+                  
+                    <div class="campo flex">
+                        <input type="submit" 
+                        value="Subir" 
+                        class="boton boton--primario mar">
+                        <input type="submit" 
+                        value="Eliminar" 
+                        class="boton boton--primario mar">
+                        <input type="submit" 
+                        value="Guardar" 
+                        class="boton boton--primario mar">
+                    </div>
+                </form>
+            
         </main>
             
         </div>
@@ -56,17 +139,10 @@
         <div class="contenedor"> 
             <div class="barra">
                 <a href="index.html" class="logo">
-                    <h1 class="logo__nombre no-margin centrar-texto">Amour <span class="logo__bold">Plastique</span></h1>
+                    <h1 class="logo__nombre no-margin centrar-texto">DCV <span class="logo__bold">a distancia</span></h1>
                 </a>
-                <nav class="navegacion">
-                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
-                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
-                    <a href="contacto.html" class="navegacion__enlace">
-                        Contacto
-                    </a>
-                </nav>
              </div>
-            
+          
 </footer>
 <script src="js/modernizr.js"></script>
 </body>

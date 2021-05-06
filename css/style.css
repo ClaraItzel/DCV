@@ -50,7 +50,13 @@ h4{
     font-size: 2.8rem;
 }
 img{
-    max-width: 100%;
+    width: 100%;
+    height: 50rem;
+}
+@media (max-width: 768px) {
+   img{
+height: 30rem;
+   }
 }
 p{
     font-size: 2.3rem;
@@ -78,21 +84,30 @@ span{
 
 /** header **/
 .webp .header{
-    background-image: url(../img/banner.webp);
+    background-image: url(../img/bann.webp);
 }
 .no-webp .header{
-     background-image: url(../img/banner.jpg);
+     background-image: url(../img/bann.jpg);
 }
 .header{
     height: 45rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+   
+}
+.color{
+    position: relative;
+    height: 45rem;
+    background-color: rgba(0, 0, 0, .6);
 }
 .header__texto{
     text-align: center;
     color: var(--blanco);
     margin-top: 5rem;
+}
+.espaciado{
+    letter-spacing: 0.8rem;
 }
 @media (min-width: 768px) {
    .header__texto{
@@ -109,24 +124,48 @@ span{
 }
 @media (max-width: 540px) {
    h1{
-      font-size: 3rem; 
+      font-size: 3rem;
    }
    h2{
        font-size: 2.5rem;
    }
-   .header{
-       padding: 1rem;
+   .navegacion__enlace{
+       font-size: 1rem;
+   }
+   .espaciado{
+       letter-spacing: 0.4rem;
+   }
+   .color{
+       padding: 1.5rem;
+   }
+   p{
+       font-size: 1.4rem;
+   }
+   .logo__nombre{
+       margin-bottom: 1rem;
+   }
+   .navegacion{
+       font-size: 1px;
    }
 }
+@media (max-width: 440px) {
+    h1{
+       font-size: 2rem; 
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+   
+ }
 .logo{
     color: var(--blanco);
 }
 .logo__nombre{
     font-weight: normal;
-    text-decoration: underline;
 }
 .logo__bold{
     font-weight: 700;
+    font-size: 2.5rem;
 }
 .navegacion__enlace{
     display: block;
@@ -177,6 +216,7 @@ span{
 @media (max-width: 368px) {
    .boton{
        font-size: 2rem;
+    
    }
 }
 @media (min-width: 768px) {
@@ -280,6 +320,20 @@ span{
 }
 }
 /* entrada */
+.correct{
+    background-color: blue;
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
+.error{
+    background-color: red;
+    text-align: center;
+    padding: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+}
 .img-p{
     margin-top: 3rem;
 }
@@ -288,7 +342,7 @@ span{
 }
 /* contacto */
 .contacto-bg{
-    background-image: url(../img/contacto.jpg);
+    background-image: url(../img/form.jpg);
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -299,20 +353,59 @@ span{
     width: 95%;
     padding: 5rem;
 }
+
 .campo{
     display: flex;
-    margin-bottom: 2rem;
-
+    margin-bottom: 2.5rem;
 }
+.campo_enc{
+    display: flex;
+    flex-direction: column;
+  
+}
+
 .campo__label{
     flex: 0 0 9rem;
     text-align: right;
     padding-right: 2rem;
 }
+.campo__label-enc{
+    margin-bottom: 1rem;
+}
+.linea{
+    border-bottom: 3px solid var(--claro);
+}
+@media (max-width: 412px) {
+ .formulario{
+     padding: 1.5rem;
+ }
+ .campo__label, .campo__field{
+     font-size: 1rem;
+ }
+}
+.campo:last-of-type{
+    border-top: 3px solid var(--claro);
+}
+.mar{
+    margin-top: 2rem;
+}
 .campo__field{
     flex: 1;
     border: 1px solid var(--claro);
 }
-.campo__field--textarea{
-    height: 20rem;
+.campo__field-enc{
+    flex: 1;
+    border: 1px solid var(--claro);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.flex{
+    justify-content: space-between;
+   
+}
+@media (max-width: 768px) {
+    .flex{
+       flex-direction: column;
+       
+    }
 }

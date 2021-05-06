@@ -40,13 +40,13 @@
                     
                 </div>
                 <form class="formulario">
-                    <h1 class="centrar-texto">Egresados</h1>
+                    <h1 class="centrar-texto">Primer Ingreso</h1>
                     <div class="campo">
-                        <label class="campo__label" for="HorayFecha">Buscar</label>
+                        <label class="campo__label" for="buscar">Buscar</label>
                             <input class="campo__field"
-                             type="text" 
+                             type="number" 
                             placeholder="Ingrese numero de cuenta" 
-                            id="HorayFecha">
+                            id="buscar">
                     </div>
                     <div class="campo linea">
                         <input type="submit" 
@@ -61,74 +61,51 @@
                             id="ID">
                         
                     </div>
+               
                     <div class="campo">
-                        <label class="campo__label"
-                        for="P_Apellido">Primer Apellido</label>
+                        <label class="campo__label" for="No_Cuenta">Numero de cuenta</label>
                             <input class="campo__field"
-                            type="text" 
-                            placeholder="Primer Apellido" 
-                            id="P_Apellido">
-                        
-                    </div>
-                    <div class="campo">
-                        <label class="campo__label"
-                        for="S_Apellido">Segundo Apellido</label>
-                            <input class="campo__field"
-                            type="text" 
-                            placeholder="Segundo Apellido" 
-                            id="S_Apellido">
-                        
-                    </div>
-                    <div class="campo">
-                        <label class="campo__label"
-                        for="nombre">Nombre</label>
-                            <input class="campo__field"
-                            type="text" 
-                            placeholder="Tu nombre" 
-                            id="nombre">
-                        
-                    </div>
-                    
-                  
-                    <div class="campo">
-                        <label class="campo__label"
-                        for="no-cuenta">No. Cuenta</label>
+                             type="number" 
+                            placeholder="Del alumno" 
+                            id="No_Cuenta">
+				</div>
+                <div class="campo">
+                    <label class="campo__label" for="Alumno">Alumno</label>
                         <input class="campo__field"
-                            type="number" 
-                            placeholder="Tu numero de cuenta" 
-                            id="no-cuenta">
-                    </div>
-                    <div class="campo">
+                         type="text" 
+                        placeholder="Empieza por apellido" 
+                        id="No_Cuenta">
+            </div>
+               
+
+
+                    <div class="campo ">
                         <label class="campo__label"
-                        for="a_ingreso">Año de Ingreso</label>
+                        for="Grupo">Grupo</label>
                             <input class="campo__field"
                             type="text" 
-                            placeholder="Ej. 2014-II" 
-                            id="a_ingreso">
+                            placeholder="ejemplo: 1002" 
+                            id="Grupo">
                         
                     </div>
-                    <div class="campo">
+                    <div class="campo ">
                         <label class="campo__label"
-                        for="a_egreso">Año de egreso</label>
+                        for="F_nacimiento">Fecha de nacimiento</label>
                             <input class="campo__field"
                             type="text" 
-                            placeholder="Ej. 2014-II" 
-                            id="a_egreso">
+                            placeholder="Fecha de nacimiento" 
+                            id="F_nacimiento">
                         
                     </div>
-                 
-                    
-                   
                     <div class="campo">
                         <label class="campo__label"
                         for="email">E-mail</label>
                             <input class="campo__field"
                             type="text" 
-                            placeholder="ejemplo: email@email.com" 
+                            placeholder="Pon tu fecha de nacimiento" 
                             id="email">
                         
                     </div>
-                   
                     <div class="campo">
                         <label class="campo__label"
                         for="Tel">Telefono</label>
@@ -138,26 +115,17 @@
                             id="Tel">
                         
                     </div>
+
                     <div class="campo">
                         <label class="campo__label"
-                        for="titulacion">Titulacion</label>
+                        for="generacion">Generacion</label>
                             <input class="campo__field"
                             type="text" 
-                            placeholder="Ej. Titulado" 
-                            id="Titulacion">
+                            placeholder="Ejemplo: 2021-II" 
+                            id="generacion">
                         
                     </div>
-                    <div class="campo">
-                        <label class="campo__label"
-                        for="op_titulacion">Opcion de titulacion</label>
-                            <input class="campo__field"
-                            type="text" 
-                            placeholder="ejemplo: tesis" 
-                            id="op_titulacion">
-                        
-                    </div>
-               
-                  
+
                     <div class="campo flex">
                         <input type="submit" 
                         value="Subir" 
@@ -181,8 +149,7 @@
                     <h1 class="logo__nombre no-margin centrar-texto">DCV <span class="logo__bold">a distancia</span></h1>
                 </a>
              </div>
-          
+             <script src="js/modernizr.js"></script>
 </footer>
-<script src="js/modernizr.js"></script>
 </body>
 </html>
