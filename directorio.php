@@ -77,7 +77,7 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $('#directorioTabla').load("directorioTabla.php");
+        $('#directorioTabla').load("componentes/directorioTabla.php");
     });
 
 </script>
