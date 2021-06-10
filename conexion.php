@@ -1,9 +1,9 @@
-<?php
-$conexion = mysqli_connect("localhost", "root", "", "dycvdb");
-if (!$conexion){
-    echo "Error al conectar con la base de datos";
-
-} else {
-    echo "Conexión exitosa";
+<?php function conexion (){
+    $servidor = "localhost";
+    $usuario = "root";
+    $password = "";
+    $bd = "dycvbd"
+    $conexion = mysqli_connect($servidor,$usuario,$password,$bd);
+    return $conexion;
 }
 ?>
