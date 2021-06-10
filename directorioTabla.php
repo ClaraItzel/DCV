@@ -1,5 +1,5 @@
 <?php
-require_once "../conexion.php";
+require_once "conexion.php";
 $conexion=conexion();
 ?>
 <div class="row">
@@ -24,7 +24,7 @@ $conexion=conexion();
             </tr>
 
             <?php
-                $consulta="SELECT * from directorio_alumnos ORDER BY P_Apellido ASC";
+                $consulta="SELECT * from directorio_alumnos";
                 $result = mysqli_query($conexion,$consulta);
                 while($ver=mysqli_fetch_row($result)){
 

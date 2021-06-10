@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;1,500;1,700&family=Pacifico&display=swap" rel="stylesheet">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="librerias/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <header class="header">
@@ -76,7 +77,7 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $('#directorioTabla').load("componentes/directorioTabla.php");
+        $('#directorioTabla').load("directorioTabla.php");
     });
 
 </script>

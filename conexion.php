@@ -2,7 +2,7 @@
     $servidor = "localhost";
     $usuario = "root";
     $password = "";
-    $bd = "dycvbd"
+    $bd = "dycvdb";
     $conexion = mysqli_connect($servidor,$usuario,$password,$bd);
     return $conexion;
 }
