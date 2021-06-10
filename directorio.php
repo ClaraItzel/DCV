@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,200;1,500;1,700&family=Pacifico&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
     <header class="header">
@@ -43,10 +45,7 @@
                     <h1 class="centrar-texto">Directorio</h1>
                     <div class="campo">
                         <label class="campo__label" for="buscar">Buscar</label>
-                            <input class="campo__field"
-                             type="number" 
-                            placeholder="Ingrese numero de cuenta" 
-                            id="buscar">
+                            <input class="campo__field" type="text" placeholder="Ingrese numero de cuenta" id="buscar">
                     </div>
                     <div class="campo linea">
                         <input type="submit" 
@@ -77,7 +76,7 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-        $('#directorioTabla').load("directorioTabla.php");
+        $('#directorioTabla').load("componentes/directorioTabla.php");
     });
 
 </script>
