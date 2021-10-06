@@ -1,9 +1,5 @@
 <?php function conexion (){
-    $servidor = "localhost";
-    $usuario = "root";
-    $password = "";
-    $bd = "dycvdb";
-    $conexion = mysqli_connect($servidor,$usuario,$password,$bd);
+ $conexion= $mysqli= new mysqli('localhost','root','','dycvbd');
     return $conexion;
 }
 ?>

@@ -21,7 +21,9 @@ body{
     line-height: 2;
     font-weight: bolder;
 }
-
+.letra{
+    font-size: 9px;
+}
 /** Globales **/
 .contenedor{
     max-width: 120rem;
@@ -95,6 +97,10 @@ span{
     background-repeat: no-repeat;
     background-position: center center;
    
+}
+.fondo{
+    background-image: url(/img/diseño.jpg);
+    background-size: cover;
 }
 .color{
     position: relative;
@@ -235,7 +241,7 @@ span{
     background: linear-gradient(to bottom right,var(--colorprimario), var(--cafe));
     border-radius: 0.5rem;
 }
-.cursos{
+.egresados{
     list-style: none;
 }
 .w-curso{
@@ -351,8 +357,8 @@ span{
 .contenedor__titulo{
     text-align: center;
 }
-/* contacto */
-.contacto-bg{
+/* directorio */
+.directorio-bg{
     background-image: url(../img/form.jpg);
     height: 40rem;
     background-size: cover;

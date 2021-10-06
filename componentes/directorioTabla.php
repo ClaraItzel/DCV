@@ -7,7 +7,7 @@ $conexion=conexion();
         <p><h2>Directorio</h2></p>
         <table class="table">
             
-            <tr>
+            <tr style="font-size:8px">
                 <td>Marca Temporal</td>
                 <td>Generación</td>
                 <td>No.Cuenta</td>
@@ -40,7 +40,7 @@ $conexion=conexion();
                         $ver[10]."||".
                         $ver[11];          
             ?>
-                    <tr>
+                    <tr style="font-size:8px">
                         <td><?php echo $ver[1]?></td>
                         <td><?php echo $ver[2]?></td>
                         <td><?php echo $ver[3]?></td>
@@ -52,10 +52,10 @@ $conexion=conexion();
                         <td><?php echo $ver[9]?></td>
                         <td><?php echo $ver[10]?></td>
                         <td><?php echo $ver[11]?></td>
-                        <td>
+                        <td style="font-size:8px">
                             <button class="btn btn-warning">Editar</button>
                         </td>
-                        <td>
+                        <td style="font-size:8px">
                             <button class="btn btn-danger">Eliminar</button>
                         </td>
                     </tr>       
